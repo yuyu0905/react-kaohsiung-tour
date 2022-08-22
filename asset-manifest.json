@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-kaohsiung-tour/static/css/main.073c9b0a.css",
-    "main.js": "/react-kaohsiung-tour/static/js/main.2b311389.js",
+    "main.css": "/react-kaohsiung-tour/static/css/main.5deba3ff.css",
+    "main.js": "/react-kaohsiung-tour/static/js/main.8ad32c48.js",
     "static/js/787.126b5dc3.chunk.js": "/react-kaohsiung-tour/static/js/787.126b5dc3.chunk.js",
     "index.html": "/react-kaohsiung-tour/index.html",
-    "main.073c9b0a.css.map": "/react-kaohsiung-tour/static/css/main.073c9b0a.css.map",
-    "main.2b311389.js.map": "/react-kaohsiung-tour/static/js/main.2b311389.js.map",
+    "main.5deba3ff.css.map": "/react-kaohsiung-tour/static/css/main.5deba3ff.css.map",
+    "main.8ad32c48.js.map": "/react-kaohsiung-tour/static/js/main.8ad32c48.js.map",
     "787.126b5dc3.chunk.js.map": "/react-kaohsiung-tour/static/js/787.126b5dc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2b311389.js"
+    "static/css/main.5deba3ff.css",
+    "static/js/main.8ad32c48.js"
   ]
 }
