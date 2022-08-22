@@ -1,46 +1,31 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
+import Layout from "./layout/Layout";
 import NotFound from "./components/NotFound";
+import Tour from "./components/Tour";
+import TourList from "./components/TourList";
+import TourDetail from "./components/TourDetail";
 
 function Home() {
   return (
-    <>
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>
-          That feels like an existential question, don't you
-          think?
-        </p>
-      </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
-    </>
+    <section className="container home">
+      <h2 className="fw-bold text-center">觀迎來到高雄旅遊網~</h2>
+    </section>
   );
 }
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to React Router!</h1>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/tour" element={<Tour />}>
+            <Route index element={<TourList />} />
+            <Route path=":tourId" element={<TourDetail />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </div>
   );

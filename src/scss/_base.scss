@@ -1,0 +1,38 @@
+
+// 基本設定
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+// * {
+//     outline: 1px solid black;
+// }
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: #d23982;
+    }
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}

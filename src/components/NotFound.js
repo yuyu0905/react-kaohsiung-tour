@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
+
 function NotFound() {
     return (
-      <>
-        <main>
-          <h2>您的網址出錯囉~</h2>
-        </main>
-        <nav>
+      <section className="container text-center">
+        <h2 className="fw-bold">您的網址出錯囉~</h2>
           <Link to="/">回到首頁</Link>
-        </nav>
-      </>
+      </section>
     );
   }
 
